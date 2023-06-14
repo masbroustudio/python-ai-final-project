@@ -48,30 +48,55 @@ def frenchToEnglish(frenchText):
         .get('translation')
     return englishText
 
-import json
-# import os
+
+# """
+# This module contains functions for translating text between English and French.
+# """
+
 # from deep_translator import MyMemoryTranslator
 
-
-# # english to french
 # def english_to_french(english_text):
 #     """
-#     function to translate Englist to french
-#     :param english_text: input string
-#     :return: french_text string
+#     Translate the provided text from English to French.
+    
+#     Args:
+#     english_text (str): Text in English to translate.
+
+#     Returns:
+#     str: Translated text in French.
 #     """
-#     french_text = MyMemoryTranslator(source="en", target="fr").translate(english_text)
-#     print(french_text)
+#     try:
+#         # Create a MyMemoryTranslator instance for English to French
+#         translator = MyMemoryTranslator(source='english', target='french')
+
+#         # Translate the text
+#         french_text = translator.translate(english_text)
+
+#     except Exception as translation_exception:
+#         # If an error occurs during translation, return the error message
+#         french_text = str(translation_exception)
 
 #     return french_text
 
-# # french to english
 # def french_to_english(french_text):
 #     """
-#     function to translate french to english
-#     :param french_text: input string
-#     :return: english_text string
+#     Translate the provided text from French to English.
+    
+#     Args:
+#     french_text (str): Text in French to translate.
+
+#     Returns:
+#     str: Translated text in English.
 #     """
-#     english_text = MyMemoryTranslator(source="fr", target="en").translate(french_text)
-#     print(english_text)
+#     try:
+#         # Create a MyMemoryTranslator instance for French to English
+#         translator = MyMemoryTranslator(source='french', target='english')
+
+#         # Translate the text
+#         english_text = translator.translate(french_text)
+
+#     except Exception as translation_exception:
+#         # If an error occurs during translation, return the error message
+#         english_text = str(translation_exception)
+
 #     return english_text
