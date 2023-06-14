@@ -12,8 +12,8 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-apikey = '4DYwNOudidnYp3pLQYjjduKNECI1DEZvswhgwAAEXHS0'
-url = "https://api.jp-tok.language-translator.watson.cloud.ibm.com/instances/fca48e92-e142-4d92-8ee1-4cef21612541"
+apikey = ''
+url = ""
 
 authenticator = IAMAuthenticator(apikey)
 language_translator = LanguageTranslatorV3(
